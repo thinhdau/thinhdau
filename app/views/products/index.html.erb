@@ -1,4 +1,4 @@
-<h1><%= t "Thịnh Đậu AkA:LiL TĐ" %></h1>
+<h1><%= t "LiL TĐ" %></h1>
 <%= link_to "New product", new_product_path %>
 <%= link_to "Login", new_session_path unless authenticated? %>
 
@@ -9,4 +9,45 @@
     </div>
   <% end %>
 </div>
+<style>
+h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  products div {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #ffffff;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  products div:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+</style>
